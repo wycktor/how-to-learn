@@ -180,25 +180,26 @@
 }
 
 .feynman{
-  min-width: 648px;
   min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feynman__title{
+  min-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   padding-bottom: 70px;
-  z-index: 2;
 }
 
 .feynman__subtitle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  text-align: center;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -210,6 +211,7 @@
   top: 50%;
   right: 48px;
   text-decoration: none;
+  color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -221,77 +223,114 @@
   left: 0;
   width: 867px;
   height: 637px;
-  z-index: 0;
 }
 
 .kaufman{
   background-color: #1f1f1f;
-  color: white;
+  position: relative;
   overflow: hidden;
+  padding: 90px 0;
 }
 
 .section__title_theme_dark{
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 90px;
-
+  color: white;
 }
 
 .section__subtitle_theme_dark{
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.table_theme_dark{
-  width: 1100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  color: white;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
+  margin-right: 0;
+  z-index: 2;
 }
 
-.table__heading_theme_dark{
-  line-height: 1.15;
-  font-size: 24px;
+.kaufman__triangle{
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.footer{
+  display: flex;
+  flex-basis: 711px;
+  background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__columns{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: white;
+}
+
+.footer__column_content_copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer{
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.footer__column_content_info{
+  align-self: unsafe center;
+}
+
+.footer__column_heading{
+  line-height: 30px;
+  font-size: 18px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.table__text_theme_dark{
-  line-height: 1.2;
+.footer__column_links{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.footer__column_link{
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.kaufman__triangle{
-  width: 877px;
-  height: 877px;
-  background-image: url(./images/kaufman-triangle.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+.footer__column_content_social{
+  display: flex;
+  flex-direction: column;
 }
 
-.footer{
+/* .footer__social_icon:first-child{
+  background-image: url(../images/youtube-icon.svg);
+} */
 
+.footer__social_icon{
+  background-image: url(../images/vk_color_white.svg);
 }
 
-.footer__columns{
-
-}
+/* .footer__social_icon:last-child{
+  background-image: url(../images/tiktok-icon.svg);
+} */
