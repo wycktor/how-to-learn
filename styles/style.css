@@ -80,6 +80,11 @@
   left: 64px;
 }
 
+.content{
+  margin: 0;
+  padding: 0;
+}
+
 .description{
   display: flex;
   justify-content: center;
@@ -128,7 +133,7 @@
   margin: 100px 0;
 }
 
-.section__title{
+.section-title{
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -138,7 +143,7 @@
   margin-bottom: 20px;
 }
 
-.section__subtitle{
+.section-subtitle{
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -191,19 +196,23 @@
 }
 
 .feynman__title{
-  min-width: 648px;
+  max-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  margin: 0;
   padding-bottom: 70px;
+  z-index: 2;
 }
 
 .feynman__subtitle{
   text-align: center;
+  vertical-align: middle;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin: 70px 0 0;
   z-index: 2;
 }
 
@@ -230,11 +239,19 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
-  padding: 90px 0;
+  padding-bottom: 90px;
+  margin: 0;
 }
 
-.section__title_theme_dark, .section__subtitle_theme_dark{
+.section-title_theme_dark, .section-subtitle_theme_dark{
   color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.table_theme_dark{
+  margin: 0;
+  padding: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -243,6 +260,8 @@
   color: white;
   margin-top: 80px;
   margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
   z-index: 2;
 }
 
@@ -255,20 +274,31 @@
   background-image: url(../images/kaufman-triangle.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 .footer{
   min-height: 350px;
   background-color: #1f1f1f;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__columns{
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 60px 0 40px;
+  margin: 0;
+  padding: 60px 0 40px;
+}
+
+.footer__column{
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column_content_copyright{
@@ -276,6 +306,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__author{
@@ -289,7 +321,9 @@
 .footer__column_content_info{
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .footer__column-heading{
@@ -323,7 +357,9 @@
 .footer__column_content_social{
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .footer__social-icon{
