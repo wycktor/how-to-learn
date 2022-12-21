@@ -189,7 +189,6 @@
   min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,8 +200,8 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  margin: 0;
-  padding-bottom: 70px;
+  margin: 100px 0 0;
+  padding: 0;
   z-index: 2;
 }
 
@@ -213,6 +212,7 @@
   font-size: 36px;
   font-weight: normal;
   margin: 70px 0 0;
+  padding: 0;
   z-index: 2;
 }
 
