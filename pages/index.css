@@ -16,3 +16,5 @@
 @import url('../blocks/two-columns/__paragraph/two-columns__paragraph.css');
 @import url('../blocks/two-columns/__span-accent/two-columns__span-accent.css');
 @import url('../blocks/digits/digits.css');
+@import url('../blocks/section-title/section-title.css');
+@import url('../blocks/section-title/_theme/section-title_theme_dark.css');
