@@ -7,55 +7,7 @@
 /* allow="accelerometr; autoplay, clipboard-write; encrypted-media; gyroscore; pictue-in-picture;" */
 
 
-.feynman{
-  min-height: 890px;
-  position: relative;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.feynman__title{
-  max-width: 648px;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  margin: 100px 0 0;
-  padding: 0;
-  z-index: 2;
-}
-
-.feynman__subtitle{
-  text-align: center;
-  vertical-align: middle;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  margin: 70px 0 0;
-  padding: 0;
-  z-index: 2;
-}
-
-.feynman__link{
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  text-decoration: none;
-  color: #2f80ed;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-}
-
-.feynman__img{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-}
 
 .kaufman{
   background-color: #1f1f1f;
